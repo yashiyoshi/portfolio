@@ -1,19 +1,46 @@
 import { Nunito } from "next/font/google";
+import Navbar from "./Components/Navbar";
+import Status from "./Components/Status";
+import Contact from "./Components/Contact";
+import SectionTitle from "./Components/SectionTitle";
 
-const nunito = Nunito({ 
+const nunito = Nunito({
   subsets: ["latin"],
-  weight: "600",
- });
+  weight: "variable",
+});
 
 export default function Home() {
   return (
-    <div className={nunito.className}>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-main1">
-        <h1 className=" text-main2 text-7xl">Hey! I am Yassir Utara.</h1>
-        <h2 className="items-center">front end developer</h2>
+    <div className={`${nunito.className} px-28 py-5 bg-main1`}>
+      <Navbar></Navbar>
+      <Status></Status>
 
+      <main className="flex min-h-screen flex-col items-center text-center justify-between p-16 bg-main1">
+        <div className="text-main2">
+          <h1 className="text-6xl font-bold">Hey! I am Yassir Utara.</h1>
+          <h2 className="p-3 text-3xl opacity-50">front-end developer</h2>
+          <p className="opacity-75 p-14 w-1/2 text-center mx-auto font-semibold">
+            Lorem ipsum dolor sit amet consectetur. Morbi duis viverra turpis
+            morbi a. Commodo sed volutpat sit sapien. Sit lorem lorem et ut
+            urna. Phasellus sit tortor vestibulum phasellus fringilla vitae
+            vivamus. Risus tristique varius ac pellentesque pellentesque nulla
+            faucibus.
+          </p>
+          <div>
+            <span>Github</span>
+            <span>LinkedIn</span>
+          </div>
+        </div>
+
+        <div className="px-10">
+          <SectionTitle title="PROJECTS"></SectionTitle>
+          <SectionTitle title="OTHER SKILLS"></SectionTitle>
+
+          <div className="text-left">
+            <Contact />
+          </div>
+        </div>
       </main>
     </div>
-
   );
 }

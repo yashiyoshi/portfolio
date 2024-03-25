@@ -17,7 +17,8 @@ const config: Config = {
         main1: '#202139',
         main2: '#C8C7FB',
         secondary1: '#313357',
-        yellow: '#EDF7F6',
+        white: '#EDF7F2',
+        yellow: '#FDCA40',
         success: '#91E75D',
         fail: '#E75D5D',
 
