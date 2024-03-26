@@ -3,7 +3,8 @@ import Navbar from "./Components/Navbar";
 import Status from "./Components/Status";
 import Contact from "./Components/Contact";
 import SectionTitle from "./Components/SectionTitle";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 const nunito = Nunito({
   subsets: ["latin"],
   weight: "variable",
@@ -14,7 +15,6 @@ export default function Home() {
     <div className={`${nunito.className} px-28 py-5 bg-main1`}>
       <Navbar></Navbar>
       <Status></Status>
-
       <main className="flex min-h-screen flex-col items-center text-center justify-between p-16 bg-main1">
         <div className="text-main2">
           <h1 className="text-6xl font-bold">Hey! I am Yassir Utara.</h1>
@@ -26,9 +26,10 @@ export default function Home() {
             vivamus. Risus tristique varius ac pellentesque pellentesque nulla
             faucibus.
           </p>
-          <div>
-            <span>Github</span>
-            <span>LinkedIn</span>
+          <div className="pb-40 align-middle text-center justify-between">
+            <FontAwesomeIcon icon={faLinkedin} size="2x" className="px-5" />
+            <FontAwesomeIcon icon={faGithub} size="2x" className="px-5"/>
+
           </div>
         </div>
 

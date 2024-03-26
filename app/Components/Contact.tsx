@@ -1,8 +1,15 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedinIn,
+  faGithub,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Contact = () => {
   return (
-    <div className="text-main2 font-bold text-3xl p-3">
+    <div className="text-main2 font-bold text-3xl p-3 pt-32">
       <span className="text-yellow pr-2 absolute -translate-x-3 -translate-y-0.5">
         |
       </span>
@@ -14,27 +21,34 @@ const Contact = () => {
           involvement, feel free to reach me at at any of my socials below. I'll
           be delighted to talk to you :)
         </p>
-
-        <div className="justify-between flex py-20">
-          <p className="text-sm self-end">
-            @ Yassir Utara, Portfolio 2024 | Made from scratch with NextJS,
-            TailwindCSS, TS
-          </p>
-          <ul className="flex space-x-10 text-sm text-yellow">
-            <li>
-              <p>email</p>
-            </li>
-            <li>
-              <p>instagram</p>
-            </li>
-            <li>
-              <p>Linkedin</p>
-            </li>
-            <li>
-              <p>github</p>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div className="justify-between flex py-20 font-normal">
+        <p className="text-sm self-end opacity-50">
+          @ Yassir Utara, Portfolio 2024 | Made from scratch with NextJS,
+          TailwindCSS, TS
+        </p>
+        <ul className="flex space-x-10 text-sm text-yellow">
+          <li>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary1">
+              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+            </div>
+          </li>
+          <li>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary1">
+              <FontAwesomeIcon icon={faInstagram} size="1x" />
+            </div>
+          </li>
+          <li>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary1">
+              <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
+            </div>
+          </li>
+          <li>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary1">
+              <FontAwesomeIcon icon={faGithub} size="1x" />
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   );
