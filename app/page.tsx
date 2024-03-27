@@ -3,8 +3,10 @@ import Navbar from "./Components/Navbar";
 import Status from "./Components/Status";
 import Contact from "./Components/Contact";
 import SectionTitle from "./Components/SectionTitle";
+import ProjectCard from "./Components/ProjectCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
 const nunito = Nunito({
   subsets: ["latin"],
   weight: "variable",
@@ -28,13 +30,15 @@ export default function Home() {
           </p>
           <div className="pb-40 align-middle text-center justify-between">
             <FontAwesomeIcon icon={faLinkedin} size="2x" className="px-5" />
-            <FontAwesomeIcon icon={faGithub} size="2x" className="px-5"/>
-
+            <FontAwesomeIcon icon={faGithub} size="2x" className="px-5" />
           </div>
         </div>
 
         <div className="px-10">
           <SectionTitle title="PROJECTS"></SectionTitle>
+          <ProjectCard></ProjectCard>
+          <ProjectCard></ProjectCard>
+          <ProjectCard></ProjectCard>
           <SectionTitle title="OTHER SKILLS"></SectionTitle>
 
           <div className="text-left">
