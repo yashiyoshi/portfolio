@@ -16,7 +16,9 @@ const config: Config = {
       colors: {
         main1: '#202139',
         main2: '#C8C7FB',
+        main3: '#272A46',
         secondary1: '#313357',
+        secondary2: '#BEBDDA',
         white: '#EDF7F2',
         yellow: '#FDCA40',
         success: '#91E75D',

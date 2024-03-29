@@ -27,7 +27,7 @@ const Contact = () => {
           @ Yassir Utara, Portfolio 2024 | Made from scratch with NextJS,
           TailwindCSS, TS
         </p>
-        <ul className="flex space-x-10 text-sm text-yellow">
+        <ul className="flex space-x-4 text-sm text-yellow">
           <li>
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary1">
               <FontAwesomeIcon icon={faEnvelope} size="1x" />
