@@ -16,6 +16,8 @@ const nunito = Nunito({
 export default function Home() {
   return (
     <div className={`${nunito.className} px-28 py-5 bg-main1`}>
+      
+      <link rel="icon" href="/images/favicon.png" />
       <Navbar></Navbar>
       <Status></Status>
       <main className="flex min-h-screen flex-col items-center text-center justify-between p-16 bg-main1">
