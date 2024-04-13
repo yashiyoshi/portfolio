@@ -21,19 +21,47 @@ const ProjectCard: React.FC<ProjectCardProps> = (
   }
 ) => {
   return (
-    <div className="mb-60 mt-20">
-      <div className="bg-secondary2 w-1/3 h-80 items-center flex justify-between">
-        <div className="items-center flex absolute left-80">
-          <Image
-            src="https://cdn.discordapp.com/attachments/555743204327030784/1222188037346168934/2AE14CDD-1265-470C-9B15F49024186C10_source.png?ex=66154e4f&is=6602d94f&hm=344a14d1f6835a63c39451bcd223d69463cb6b56b117a360ad0608bfaa087877&"
-            alt={"Project Image"}
-            width={400}
-            height={250}
-          ></Image>
-
+    <div className="mb-60 flex flex-col text-main2">
+      <div>
+        <p className="left-10"></p>
+        <Image
+          src="https://placehold.co/800x600/png"
+          alt="Project Image"
+          width={800}
+          height={600}
+          className="md:w-[600px] md:h-[400px]"
+        />
+      </div>
+      <div>
+        <div className="md:flex text-left md:flex-col ">
+          <p className="text-white font-semibold text-xl sm:text-3xl mt-4">
+            Chi Boards Product Catalog Page
+          </p>
+          <div className="md:flex-row md:flex">
+            <p className="text-sm sm:text-base opacity-75 sm:text-green-500 md:text-red-500">
+              A product catalog page for the small business -- Chi Boards (owned
+              by yours truly) :) Lorem ipsum dolor sit amet consectetur. Arcu
+              volutpat posuere tristique proin. Mi donec iaculis ullamcorper
+              posuere ligula. dlasjdlasjd dslaj dlkasjl kjdas dsa da djsah
+              djaskd ahskjd hajk dah
+            </p>
+            <ul className="flex md:justify-end space-x-5 text-sm text-yellow mt-4">
+              <li>
+                <div className="flex items-center text-center justify-center w-8 h-8 sm:w-12 sm:h-12 sm:text-xl md:text-2xl md:ml-12 rounded-full bg-secondary1">
+                  <FontAwesomeIcon icon={faGithub} size="xs" />
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center text-center justify-center w-8 h-8 sm:w-12 sm:h-12 sm:text-xl md:text-2xl rounded-full bg-secondary1">
+                  <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" />
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className=" text-left relative flex justify-between ">
+
+      {/* <div className=" text-left relative flex justify-between ">
         <h1 className=" text-3xl font-semibold flex">Lorem ipsum dolor sit</h1>
         <p className="absolute mr-40 top-6 -mt-3 indent-80 text-sm text-main2 opacity-75 flex">
           Lorem ipsum dolor sit amet consectetur. Arcu volutpat posuere
@@ -52,7 +80,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (
             </div>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

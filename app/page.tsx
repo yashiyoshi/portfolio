@@ -15,29 +15,34 @@ const nunito = Nunito({
 
 export default function Home() {
   return (
-    <div className={`${nunito.className} px-28 py-5 bg-main1`}>
-      
+    <div className={`${nunito.className} px-8 sm:px-16 md:px-18 lg:px-24 py-5 bg-main1`}>
       <link rel="icon" href="/images/favicon.png" />
       <Navbar></Navbar>
       <Status></Status>
-      <main className="flex min-h-screen flex-col items-center text-center justify-between p-16 bg-main1">
+      <main className="flex min-h-screen flex-col items-center text-center justify-between bg-main1">
         <div className="text-main2">
-          <h1 className="text-6xl font-bold">Hey! I am Yassir Utara.</h1>
-          <h2 className="p-3 text-3xl opacity-50">front-end developer</h2>
-          <p className="opacity-75 p-14 w-1/2 text-center mx-auto font-semibold">
+          <div className="text-6xl font-bold mt-8 md:hidden">
+            <p className="">Hey! I am</p>
+            <p>Yassir Utara.</p>
+          </div>
+          <p className="text-6xl font-bold mt-8 hidden md:inline-block">Hey! I am Yassir Utara.</p>
+          <p className="p-3 text-2xl sm:text-3xl opacity-50">
+            front-end developer
+          </p>
+          <p className="opacity-75 text-center mx-auto font-semibold text-sm md:text-lg my-8 max-w-[400px]">
             Lorem ipsum dolor sit amet consectetur. Morbi duis viverra turpis
             morbi a. Commodo sed volutpat sit sapien. Sit lorem lorem et ut
             urna. Phasellus sit tortor vestibulum phasellus fringilla vitae
             vivamus. Risus tristique varius ac pellentesque pellentesque nulla
             faucibus.
           </p>
-          <div className="pb-40 align-middle text-center justify-between">
+          <div className="mb-40 mt-16 align-middle text-center justify-between">
             <FontAwesomeIcon icon={faLinkedin} size="2x" className="px-5" />
             <FontAwesomeIcon icon={faGithub} size="2x" className="px-5" />
           </div>
         </div>
 
-        <div className="px-10">
+        <div className="">
           <SectionTitle title="PROJECTS"></SectionTitle>
           <ProjectCard></ProjectCard>
           {/* Want to add more projects? Head on to the ProjectCard.tsx file */}
@@ -51,14 +56,16 @@ export default function Home() {
             ></SkillsCard>
 
             <SkillsCard
-            title="Video Editing"
-            imageSrc="https://i.ytimg.com/vi/TC18L-ntFI4/maxresdefault.jpg"
-            description="Cats love to hunt prey (like you)"></SkillsCard>
+              title="Video Editing"
+              imageSrc="https://i.ytimg.com/vi/TC18L-ntFI4/maxresdefault.jpg"
+              description="Cats love to hunt prey (like you)"
+            ></SkillsCard>
 
             <SkillsCard
-            title="Business Management"
-            imageSrc="https://t3.ftcdn.net/jpg/06/08/87/72/360_F_608877257_Fzqg9kgG6hcR9hoVCUyg8RrmQWkv2JTM.jpg"
-            description="Cats love business"></SkillsCard>
+              title="Business Management"
+              imageSrc="https://t3.ftcdn.net/jpg/06/08/87/72/360_F_608877257_Fzqg9kgG6hcR9hoVCUyg8RrmQWkv2JTM.jpg"
+              description="Cats love business"
+            ></SkillsCard>
           </div>
 
           <div className="text-left">

@@ -9,7 +9,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Contact = () => {
   return (
-    <div className="text-main2 font-bold text-3xl p-3 pt-32">
+    <div className="text-main2 font-bold text-3xl pt-32">
       <span className="text-yellow pr-2 absolute -translate-x-3 -translate-y-0.5">
         |
       </span>
@@ -22,29 +22,28 @@ const Contact = () => {
           be delighted to talk to you :)
         </p>
       </div>
-      <div className="justify-between flex py-20 font-normal">
-        <p className="text-sm self-end opacity-50">
-          @ Yassir Utara, Portfolio 2024 | Made from scratch with NextJS,
-          TailwindCSS, TS
+      <div className="flex flex-col sm:flex-row sm:justify-between justify-center align-middle items-center pt-20 pb-10 font-normal">
+        <p className="text-xs md:text-sm sm:self-end opacity-50">
+          @ Yassir Utara, Portfolio 2024 | Made from scratch with NextJS
         </p>
-        <ul className="flex space-x-4 text-sm text-yellow">
+        <ul className="flex space-x-4 text-sm text-yellow mt-4">
           <li>
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary1">
+            <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-secondary1">
               <FontAwesomeIcon icon={faEnvelope} size="1x" />
             </div>
           </li>
           <li>
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary1">
+            <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-secondary1">
               <FontAwesomeIcon icon={faInstagram} size="1x" />
             </div>
           </li>
           <li>
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary1">
+            <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-secondary1">
               <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
             </div>
           </li>
           <li>
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary1">
+            <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-secondary1">
               <FontAwesomeIcon icon={faGithub} size="1x" />
             </div>
           </li>
