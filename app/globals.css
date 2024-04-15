@@ -31,3 +31,19 @@ body {
     text-wrap: balance;
   }
 }
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    #c8c7fb,
+    #edf7f2,
+    #c8c7fb,
+    #fafbc7,
+    #c8c7fb,
+    #edf7f2,
+    #c8c7fb
+  );
+  background-size: 300% 300%;
+
+  background-clip: text;
+}

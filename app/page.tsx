@@ -15,17 +15,26 @@ const nunito = Nunito({
 
 export default function Home() {
   return (
-    <div className={`${nunito.className} px-8 sm:px-16 md:px-18 lg:px-24 py-5 bg-main1`}>
+    <div
+      className={`${nunito.className} px-8 sm:px-16 md:px-18 lg:px-24 py-5 bg-main1`}
+    >
       <link rel="icon" href="/images/favicon.png" />
       <Navbar></Navbar>
       <Status></Status>
       <main className="flex min-h-screen flex-col items-center text-center justify-between bg-main1">
         <div className="text-main2">
           <div className="text-6xl font-bold mt-8 md:hidden">
-            <p className="">Hey! I am</p>
-            <p>Yassir Utara.</p>
+            <p className="text-2xl opacity-50">Hey! I am</p>
+            <p className="gradient-text text-transparent animate-gradient">
+              Yassir Utara.
+            </p>
           </div>
-          <p className="text-6xl font-bold mt-8 hidden md:inline-block">Hey! I am Yassir Utara.</p>
+          <span className="text-6xl font-bold mt-8 hidden md:inline-block">
+            Hey! I am
+          </span>
+          <span className="gradient-text text-transparent animate-gradient text-6xl font-bold mt-8 hidden md:inline-block ml-2 ">
+            Yassir Utara.
+          </span>
           <p className="p-3 text-2xl sm:text-3xl opacity-50">
             front-end developer
           </p>
@@ -42,8 +51,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="">
+        <div className="lg:mx-32">
           <SectionTitle title="PROJECTS"></SectionTitle>
+          <ProjectCard></ProjectCard>
           <ProjectCard></ProjectCard>
           {/* Want to add more projects? Head on to the ProjectCard.tsx file */}
 

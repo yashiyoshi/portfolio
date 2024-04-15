@@ -13,7 +13,7 @@ const SkillsCard: React.FC<SkillsCardProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="w-4/5 shadow-lg overflow-hidden bg-main3 align-middle text-center mx-auto rounded-md mt-10">
+    <div className="w-4/5 shadow-lg overflow-hidden bg-main3 align-middle text-center mx-auto rounded-md">
       <div
         className="h-48 w-3/4 mx-auto mt-4 bg-center"
         style={{
