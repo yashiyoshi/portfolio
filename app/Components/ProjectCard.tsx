@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="flex flex-col md:flex-row md:justify-between md:items-center ">
         <div className="w-[400px] md:w-[350px] lg:w-2/3 lg:max-w-[400px] flex flex-row justify-start py-4 md:py-0 mr-4">
           <p className="left-10"></p>
-          <img
+          <Image
             src={imageSource}
             alt="Project Image"
             width={600}

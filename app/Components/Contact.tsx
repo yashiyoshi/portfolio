@@ -12,11 +12,11 @@ const Contact = () => {
       </span>
       <span className="tracking-wider items-start">DONT BE A STRANGER</span>
       <div className="opacity-50 font-normal text-2xl">
-        <p className="py-10">Let's make something exciting together!</p>
+        <p className="py-10">Let&apos;s make something exciting together!</p>
         <p className="py-10">
           If you have an opportunity or any project that would benefit from my
           involvement, feel free to reach me at at any of my socials below.
-          I'll be delighted to talk to you :)
+          I&apos;ll be delighted to talk to you :)
         </p>
       </div>
       <div className="flex flex-col sm:flex-row sm:justify-between justify-center align-middle items-center pt-56 pb-10 font-normal">
