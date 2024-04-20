@@ -39,42 +39,66 @@ export default function Home() {
             front-end developer
           </p>
           <p className="opacity-75 text-center mx-auto font-semibold text-sm md:text-lg my-8 max-w-[400px]">
-            Lorem ipsum dolor sit amet consectetur. Morbi duis viverra turpis
-            morbi a. Commodo sed volutpat sit sapien. Sit lorem lorem et ut
-            urna. Phasellus sit tortor vestibulum phasellus fringilla vitae
-            vivamus. Risus tristique varius ac pellentesque pellentesque nulla
-            faucibus.
+            I am currently in my 3rd year of my Bachelor’s Degree in Computer
+            Science at Ateneo de Davao University. I manage the sales and the
+            creatives of my own business. I have a well-rounded skillset
+            relevant to today’s job market ranging from website development,
+            video editing, to graphic designing.
           </p>
-          <div className="mb-40 mt-16 align-middle text-center justify-between">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" className="px-5" />
-            <FontAwesomeIcon icon={faGithub} size="2x" className="px-5" />
+          <div className="mb-40 mt-12 align-middle text-center justify-between space-x-8">
+            <a
+              href="https://linkedin.com/in/yassir-utara"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity duration-300 hover:opacity-75"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+            <a
+              href="https://github.com/yashiyoshi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity duration-300 hover:opacity-75"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
           </div>
         </div>
 
         <div className="lg:mx-32">
           <SectionTitle title="PROJECTS"></SectionTitle>
-          <ProjectCard></ProjectCard>
-          <ProjectCard></ProjectCard>
+          <ProjectCard
+            title="Chi Boards: Product Catalog Page"
+            description="A product catalog page for the small business -- Chi Boards (owned
+              by yours truly)."
+            projectNumber="01"
+            imageSource="https://media.discordapp.net/attachments/1223282823620858039/1230913559459008542/New_Project_17.png?ex=66350c95&is=66229795&hm=68288d2cb206069cf7949565f33186192848b6a67f8ccc7f593b7b80baaa9aed&=&format=webp&quality=lossless&width=728&height=546"
+            tech1="NEXTJS"
+            tech2="TAILWIND"
+            tech3="FIREBASE"
+            githubLink="https://github.com/yashiyoshi/chi-boards-website"
+            liveLink="https://chiboards.netlify.app"
+          ></ProjectCard>
           {/* Want to add more projects? Head on to the ProjectCard.tsx file */}
 
           <SectionTitle title="OTHER SKILLS"></SectionTitle>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <SkillsCard
               title="Graphic Design"
-              imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxJrW4JUqREwIZ3uJAEn8oTDfDPmh-HsxJf8s9gk3INw&s"
-              description="Did you know? Orange cats are usually male. In fact, about 80% of all orange tabbies are male."
+              imageSrc=""
+              description="I'd like to think I'm very meticulate and particular with graphics when I'm assigned tasks related to graphic designing. I have a mordern and minimalistic style when it comes to designing. "
             ></SkillsCard>
 
             <SkillsCard
               title="Video Editing"
-              imageSrc="https://i.ytimg.com/vi/TC18L-ntFI4/maxresdefault.jpg"
-              description="Cats love to hunt prey (like you)"
+              imageSrc=""
+              description="Editing used to be such a big hobby of mine. I used to record minecraft gameplays and funny moments with friends and edit them for fun :)"
             ></SkillsCard>
 
             <SkillsCard
               title="Business Management"
-              imageSrc="https://t3.ftcdn.net/jpg/06/08/87/72/360_F_608877257_Fzqg9kgG6hcR9hoVCUyg8RrmQWkv2JTM.jpg"
-              description="Cats love business"
+              imageSrc=""
+              description="I'm currently handling everything related to Chi Boards. From the sales, to the creatives, to the marketing, I'm the one in charge of it all."
             ></SkillsCard>
           </div>
 
