@@ -31,8 +31,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="mb-40 md:mb-60 flex flex-col text-main2">
       <div className="flex flex-col md:flex-row md:justify-between md:items-center ">
-        <div className="w-[400px] md:w-[350px] lg:w-2/3 lg:max-w-[400px] flex flex-row justify-start py-4 md:py-0 mr-4">
-          <p className="left-10"></p>
+        <div className="w-[400px] md:w-[350px] lg:w-2/3 lg:max-w-[400px] flex flex-row justify-start py-4 md:py-0 mr-4 md:shadow-lg md:shadow-yellow/25">
+          <div className="absolute invisible lg:visible text-white -rotate-12 -translate-x-2 -translate-y-20">
+          <p>my latest work!</p>
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" className="h-6 w-6 min-w-[24px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M212,32a12,12,0,0,1-12,12,84.09,84.09,0,0,0-84,84v67l27.51-27.52a12,12,0,0,1,17,17l-48,48a12,12,0,0,1-17,0l-48-48a12,12,0,0,1,17-17L92,195V128A108.12,108.12,0,0,1,200,20,12,12,0,0,1,212,32Z"></path></svg>
+          </div>
           <Image
             src={imageSource}
             alt="Project Image"

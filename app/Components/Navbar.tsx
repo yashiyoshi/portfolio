@@ -23,13 +23,13 @@ const Navbar = () => {
             <p className="hover:text-gray-200">contact</p>
           </Link>
         </li>
-        <li className=" sm:hidden">
+        {/* <li className=" sm:hidden">
           <Link href="#">
             <div>
               <FontAwesomeIcon icon={faBars} size="2x" />
             </div>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

@@ -45,7 +45,7 @@ export default function Home() {
             relevant to today’s job market ranging from website development,
             video editing, to graphic designing.
           </p>
-          <div className="mb-40 mt-12 align-middle text-center justify-between space-x-8">
+          <div className="mb-40 mt-10 align-middle text-center justify-between space-x-8">
             <a
               href="https://linkedin.com/in/yassir-utara"
               target="_blank"
@@ -67,12 +67,13 @@ export default function Home() {
 
         <div className="lg:mx-32">
           <SectionTitle title="PROJECTS"></SectionTitle>
+          {/* image SHOULD be 800x450px. edited with Canva*/}
           <ProjectCard
             title="Chi Boards: Product Catalog Page"
             description="A product catalog page for the small business -- Chi Boards (owned
               by yours truly)."
             projectNumber="01"
-            imageSource="https://media.discordapp.net/attachments/1223282823620858039/1230913559459008542/New_Project_17.png?ex=66350c95&is=66229795&hm=68288d2cb206069cf7949565f33186192848b6a67f8ccc7f593b7b80baaa9aed&=&format=webp&quality=lossless&width=728&height=546"
+            imageSource="https://i.postimg.cc/85GhJp6Q/Project-1.png"
             tech1="NEXTJS"
             tech2="TAILWIND"
             tech3="FIREBASE"
@@ -81,8 +82,8 @@ export default function Home() {
           ></ProjectCard>
           {/* Want to add more projects? Head on to the ProjectCard.tsx file */}
 
-          <SectionTitle title="OTHER SKILLS"></SectionTitle>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* <SectionTitle title="OTHER SKILLS"></SectionTitle>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-2">
             <SkillsCard
               title="Graphic Design"
               imageSrc=""
@@ -100,7 +101,11 @@ export default function Home() {
               imageSrc=""
               description="I'm currently handling everything related to Chi Boards. From the sales, to the creatives, to the marketing, I'm the one in charge of it all."
             ></SkillsCard>
-          </div>
+          </div> */}
+
+          {/* <SectionTitle title="GRAPHICS"></SectionTitle> */}
+
+          
 
           <div className="text-left">
             <Contact />
