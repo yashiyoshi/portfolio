@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 interface SkillsCardProps {
@@ -20,6 +19,8 @@ const SkillsCard: React.FC<SkillsCardProps> = ({
           backgroundImage: `url(${imageSrc})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          width: "200px", // Set fixed width
+          height: "200px", // Set fixed height
         }}
       ></div>
       <div className="p-2">
@@ -33,4 +34,5 @@ const SkillsCard: React.FC<SkillsCardProps> = ({
     </div>
   );
 };
+
 export default SkillsCard;

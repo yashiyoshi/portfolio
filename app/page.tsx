@@ -66,7 +66,9 @@ export default function Home() {
         </div>
 
         <div className="lg:mx-32">
-          <SectionTitle title="PROJECTS"></SectionTitle>
+          <div id="projects">
+            <SectionTitle title="PROJECTS"></SectionTitle>
+          </div>
           {/* image SHOULD be 800x450px. edited with Canva*/}
           <ProjectCard
             title="Chi Boards: Product Catalog Page"
@@ -82,32 +84,32 @@ export default function Home() {
           ></ProjectCard>
           {/* Want to add more projects? Head on to the ProjectCard.tsx file */}
 
-          {/* <SectionTitle title="OTHER SKILLS"></SectionTitle>
+          <div id="skills">
+          <SectionTitle title="OTHER SKILLS"></SectionTitle>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-2">
             <SkillsCard
-              title="Graphic Design"
-              imageSrc=""
-              description="I'd like to think I'm very meticulate and particular with graphics when I'm assigned tasks related to graphic designing. I have a mordern and minimalistic style when it comes to designing. "
+              title="UI Designing"
+              imageSrc="https://i.postimg.cc/mgLy3Skt/UI-Designing.png"
+              description="I take pride in my meticulous attention to detail, especially when it comes to graphic design tasks. My style leans towards the modern and minimalistic, reflecting a focused and refined approach to design. "
             ></SkillsCard>
 
             <SkillsCard
               title="Video Editing"
-              imageSrc=""
+              imageSrc="https://i.postimg.cc/CxcHcfnJ/New-graphics-editing.png"
               description="Editing used to be such a big hobby of mine. I used to record minecraft gameplays and funny moments with friends and edit them for fun :)"
             ></SkillsCard>
 
             <SkillsCard
               title="Business Management"
-              imageSrc=""
+              imageSrc="https://i.postimg.cc/Gp9PVhkR/business-management.png"
               description="I'm currently handling everything related to Chi Boards. From the sales, to the creatives, to the marketing, I'm the one in charge of it all."
             ></SkillsCard>
-          </div> */}
+          </div>
 
           {/* <SectionTitle title="GRAPHICS"></SectionTitle> */}
 
-          
-
-          <div className="text-left">
+          <div className="text-left" id="contacts">
             <Contact />
           </div>
         </div>
