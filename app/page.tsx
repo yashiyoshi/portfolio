@@ -71,7 +71,7 @@ export default function Home() {
           {/* image SHOULD be 800x450px. edited with Canva*/}
           <ProjectCard
             title="Yassir's Playground"
-            description="A project where I experiment my web development skills, through games and other knick-knacks."
+            description="A project where I experiment my web development skills through games and other knick-knacks."
             projectNumber="01"
             imageSource="https://i.postimg.cc/jSkk9TJQ/2.png"
             tech1="NEXTJS"
