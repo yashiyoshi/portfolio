@@ -7,6 +7,7 @@ import ProjectCard from "./Components/ProjectCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import SkillsCard from "./Components/SkillsCard";
+import Positions from "./Components/Positions";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -35,9 +36,7 @@ export default function Home() {
           <span className="gradient-text text-transparent animate-gradient text-6xl font-bold mt-8 hidden md:inline-block ml-2 ">
             Yassir Utara.
           </span>
-          <p className="p-3 text-2xl sm:text-3xl opacity-50">
-            front-end developer
-          </p>
+          <Positions />
           <p className="opacity-75 text-center mx-auto font-semibold text-sm md:text-lg my-8 max-w-[400px]">
             I am currently in my 3rd year of my Bachelor’s Degree in Computer
             Science at Ateneo de Davao University. I manage the sales and the
