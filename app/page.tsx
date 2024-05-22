@@ -73,7 +73,7 @@ export default function Home() {
             title="Yassir's Playground"
             description="A project where I experiment my web development skills, through games and other knick-knacks."
             projectNumber="01"
-            imageSource="https://i.postimg.cc/w1LVyS27/2.png"
+            imageSource="https://i.postimg.cc/jSkk9TJQ/2.png"
             tech1="NEXTJS"
             tech2="TAILWIND"
             tech3=""
@@ -85,7 +85,7 @@ export default function Home() {
             description="A product catalog page for the small business -- Chi Boards (owned
               by yours truly)."
             projectNumber="02"
-            imageSource="https://i.postimg.cc/F72pK9jM/1.png"
+            imageSource="https://i.postimg.cc/52tRnyj2/1.png"
             tech1="NEXTJS"
             tech2="TAILWIND"
             tech3="FIREBASE"
