@@ -70,28 +70,27 @@ export default function Home() {
           </div>
           {/* image SHOULD be 800x450px. edited with Canva*/}
           <ProjectCard
-            title="Chi Boards: Product Catalog Page"
-            description="A product catalog page for the small business -- Chi Boards (owned
-              by yours truly)."
-            projectNumber="01"
-            imageSource="https://i.postimg.cc/85GhJp6Q/Project-1.png"
-            tech1="NEXTJS"
-            tech2="TAILWIND"
-            tech3="FIREBASE"
-            githubLink="https://github.com/yashiyoshi/chi-boards-website"
-            liveLink="https://chiboards.netlify.app"
-          ></ProjectCard>
-
-          <ProjectCard
             title="Yassir's Playground"
             description="A project where I experiment my web development skills, through games and other knick-knacks."
-            projectNumber="02"
-            imageSource="https://i.postimg.cc/85GhJp6Q/Project-1.png"
+            projectNumber="01"
+            imageSource="https://i.postimg.cc/w1LVyS27/2.png"
             tech1="NEXTJS"
             tech2="TAILWIND"
             tech3=""
             githubLink="https://github.com/yashiyoshi/yassir-playground"
             liveLink="https://yassir-playground.netlify.app"
+          ></ProjectCard>
+          <ProjectCard
+            title="Chi Boards: Product Catalog Page"
+            description="A product catalog page for the small business -- Chi Boards (owned
+              by yours truly)."
+            projectNumber="02"
+            imageSource="https://i.postimg.cc/F72pK9jM/1.png"
+            tech1="NEXTJS"
+            tech2="TAILWIND"
+            tech3="FIREBASE"
+            githubLink="https://github.com/yashiyoshi/chi-boards-website"
+            liveLink="https://chiboards.netlify.app"
           ></ProjectCard>
 
           <div id="skills">
