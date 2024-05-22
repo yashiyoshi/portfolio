@@ -81,10 +81,21 @@ export default function Home() {
             githubLink="https://github.com/yashiyoshi/chi-boards-website"
             liveLink="https://chiboards.netlify.app"
           ></ProjectCard>
-          {/* Want to add more projects? Head on to the ProjectCard.tsx file */}
+
+          <ProjectCard
+            title="Yassir's Playground"
+            description="A project where I experiment my web development skills, through games and other knick-knacks."
+            projectNumber="02"
+            imageSource="https://i.postimg.cc/85GhJp6Q/Project-1.png"
+            tech1="NEXTJS"
+            tech2="TAILWIND"
+            tech3=""
+            githubLink="https://github.com/yashiyoshi/yassir-playground"
+            liveLink="https://yassir-playground.netlify.app"
+          ></ProjectCard>
 
           <div id="skills">
-          <SectionTitle title="OTHER SKILLS"></SectionTitle>
+            <SectionTitle title="OTHER SKILLS"></SectionTitle>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-2">
             <SkillsCard
