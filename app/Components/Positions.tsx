@@ -1,10 +1,10 @@
-'use client'
-import React from 'react';
-import dynamic from 'next/dynamic';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+"use client";
+import React from "react";
+import dynamic from "next/dynamic";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const Slider = dynamic(() => import('react-slick'), { ssr: false });
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const Positions = () => {
   const settings = {
@@ -22,24 +22,26 @@ const Positions = () => {
   };
 
   return (
-    <div className="p-3 text-2xl sm:text-3xl opacity-50 h-12 overflow-hidden">
-      <Slider {...settings}>
-        <div>
-          <p>front-end developer</p>
-        </div>
-        <div>
-          <p>graphic designer</p>
-        </div>
-        <div>
-          <p>video editor</p>
-        </div>
-        <div>
-          <p>business owner</p>
-        </div>
-        <div>
-          <p>cat owner</p>
-        </div>
-      </Slider>
+    <div className="opacity-0 animate-fade-in-delay-1">
+      <div className="p-3 text-2xl sm:text-3xl opacity-50 h-12 overflow-hidden">
+        <Slider {...settings}>
+          <div>
+            <p>front-end developer</p>
+          </div>
+          <div>
+            <p>graphic designer</p>
+          </div>
+          <div>
+            <p>video editor</p>
+          </div>
+          <div>
+            <p>business owner</p>
+          </div>
+          <div>
+            <p>cat owner</p>
+          </div>
+        </Slider>
+      </div>
     </div>
   );
 };

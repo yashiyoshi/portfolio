@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveLink,
 }) => {
   return (
-    <div className="mb-40 md:mb-40 flex flex-col text-main2 p-4 rounded-lg transition duration-500 ease-in-out transform hover:bg-secondary1 hover:bg-opacity-50">
+    <div className="mb-32 md:mb-32 flex flex-col text-main2 p-4 rounded-lg transition duration-500 ease-in-out transform hover:bg-secondary1 hover:bg-opacity-50">
       <div className="flex flex-col md:flex-row md:justify-between md:items-center">
         <div className="w-[400px] md:w-[350px] lg:w-2/3 lg:max-w-[400px] flex flex-row justify-start py-4 md:py-0 mr-4 md:shadow-lg md:shadow-yellow/25 relative">
           {projectNumber === "01" && (

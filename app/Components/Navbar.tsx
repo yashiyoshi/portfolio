@@ -13,13 +13,22 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-main1 flex justify-between items-center my-4 sm:my-6 font-bold text-main2">
+    <div className="bg-main1 flex justify-between items-center my-4 sm:my-6 font-bold text-main2 animate-fade-in-delay-3 opacity-0">
       <p className="text-4xl font-bold hover:text-yellow transition duration-300 ease-in-out">
         <span className="text-yellow text-4xl -translate-y-0.5 mr-0.5">.</span>
         yassir
       </p>
 
-      <ul className="flex md:space-x-16 sm:space-x-12">
+      <ul className="flex md:space-x-12 sm:space-x-10">
+        <li className="hidden sm:flex">
+          <span className="text-yellow text-xl -translate-y-0.5 mr-0.5">.</span>
+          <button
+            onClick={() => scrollToSection("aboutme")}
+            className="hover:text-yellow transition duration-300 ease-in-out focus:outline-none"
+          >
+            about me
+          </button>
+        </li>
         <li className="hidden sm:flex">
           <span className="text-yellow text-xl -translate-y-0.5 mr-0.5">.</span>
           <button
@@ -47,6 +56,7 @@ const Navbar = () => {
             contacts
           </button>
         </li>
+
         {/* <li className="sm:hidden">
           <Link href="#">
             <div>
